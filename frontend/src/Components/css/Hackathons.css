@@ -1,0 +1,180 @@
+* {
+    font-family: 'Abyssinica SIL';
+    font-style: normal;
+}
+
+.hack-body {
+    display: flex;
+    margin: 2em;
+}
+
+.hack-filters {
+    width: 30%;
+    margin-left: auto;
+}
+
+.hack-card {
+    background: #FFFFFF;
+    border: 1px solid #948E8E;
+    border-radius: 8px;
+    width: 100%;
+    height: fit-content;
+    margin: 1em;
+    border-right: 8px yellow solid;
+    padding: 1em;
+    display: flex;
+    overflow: auto;
+}
+
+.hack-title {
+    font-family: 'Abyssinica SIL';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.hack-filter{
+    display: flex;
+    margin: 2em;
+}
+
+.hack-filter div{
+    display: flex;
+    margin: 1px;
+    padding: 1px;
+}
+
+.hack-filter h6{
+    display: flex;
+}
+
+.sort-filter{
+    margin: 0;
+    border: 1px black solid;
+    padding: 0.3em;
+}
+
+.hack-img {
+    border: 1px solid #A6A6A6;
+    border-radius: 5px;
+    float: left;
+    width: 9em;
+    height: fit-content;
+    overflow: auto;
+    margin: 1em;
+    align-items: center;
+}
+
+.hack-img img {
+    width: 100%;
+}
+
+.hack-check {
+    padding: 4px;
+    margin: 1em;
+    width: 10%;
+}
+
+.check {
+    padding: 2px;
+    display: flex;
+}
+
+.hack-info {
+    display: flex;
+}
+
+.hack-details {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0.5em;
+    border-right: gray solid;
+}
+
+.hack-days {
+    color: white;
+    padding: 3px;
+    height: fit-content;
+    background: #022445;
+    border-radius: 8px;
+}
+
+.mobile-filter{
+    display: none;
+}
+
+.hack-days,
+.hack-mode,
+.hack-prize,
+.hack-parti {
+    padding: 4px;
+    font-size: 20px;
+    margin-right: 5em;
+    width: fit-content;
+}
+
+.hack-card-side-info {
+    padding: 1em;
+}
+
+.hack-card-side-info h6 {
+    font-size: 20px;
+}
+
+@media screen and (max-width:1024px) {
+
+    .hack-body{
+        display: grid;
+    }
+    .hack-card {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: fit-content;
+    }
+
+    .hack-filters {
+        display: none;
+    }
+
+    hack-info{
+        display: flexbox;
+    }
+    .hack-title{
+        font-size: 1.5em;
+    }
+
+    .hack-days,
+    .hack-mode,
+    .hack-prize,
+    .hack-parti {
+        margin-right: 0.5em;
+        font-size: 1em;
+        width: fit-content;
+    }
+
+    .hack-details{
+        border-right: none;
+        display: block;
+    }
+    .mobile-filter{
+        display: flex;
+        /* margin: 1em; */
+        margin-bottom: 1em;
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    .hack-filter{
+        display: none;
+    }
+
+    .mobile-filter h5{
+        font-size: 18px;
+        padding: 0.3em;
+        border: 2px #022445 solid;
+        border-radius: 18px;
+        margin: 0.3em;
+        color: brown;
+    }
+}
